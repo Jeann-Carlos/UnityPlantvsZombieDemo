@@ -1,12 +1,11 @@
-# Unity-PlantVsZombies-Game
-This a basic unity plant vs zombies clones, it will only be used as a testing ground for technical utilities and not as an actual game. Currently the focus point of this game is to effectively implement a plant vs zombies clone using the Unity D.O.T.S formulation which is Unity's new high-performance, multithreaded Data-Oriented Technology.
+# UnityPlantVsZombies Demo 
+A basic unity plant vs zombies clone, it and will only be used as a testing ground for technical utilities and not as an actual game. Currently the focus point of this game is to effectively implement a plant vs zombies clone using the Unity D.O.T.S formulation which is Unity's new high-performance, multithreaded Data-Oriented Technology.
 
 ## Technical Capabilities
 
 ### D.O.T.S
-DOTS marks a fundamental change in direction of Unity’s architecture. DOTS is a combination of technologies that are new to Unity, which requires a new way of working with Unity and a different approach to thinking about code and data using data-oriented design (DoD), as opposed to the object-oriented approach of Unity without DOTS.
+DOTS is a significant shift in Unity's architecture. DOTS is a new set of technologies for Unity whos purpose is to a new way of working with the engine and a new way of thinking about code and data using data-oriented design (DoD), as opposed to Unity's object-oriented approach.
 
 ### Object Pool
-Instantiate() and Destroy() are useful and necessary methods during gameplay. Each generally requires minimal CPU time.
-However, many seamingly insignificant things with some time may add up. This becomes a problem in ( for example) a game where many object may bee instantaited and destroyed at the same time (like plant vs zombies). Additionally, Unity uses Garbage Collection to deallocate memory that’s no longer in use. Repeated calls to Destroy() frequently trigger this task, and it has a knack for slowing down CPUs and introducing pauses to gameplay. This behavior is critical in resource-constrained environments such as mobile devices and web builds.Object pooling is where you pre-instantiate all the objects you’ll need at any specific moment before gameplay — for instance, during a loading screen. Instead of creating new objects and destroying old ones during gameplay, your game reuses objects from a “pool”.
-
+During gameplay, the methods Instantiate() and Destroy() are both beneficial and required in most cases, only a little amount of CPU time is required (for this set of actions).
+However, many seemingly little things can build up over time. This becomes a problem in games when a large number of objects are created and destroyed at the same time (like plant vs zombies). Garbage Collection is also used by Unity to deallocate memory that is no longer in use. This task is commonly triggered by repeated calls to Destroy(), and it has a habit of slowing down CPUs and causing gameplay pauses. In resource-constrained settings, such as mobile devices and web builds, this behavior is crucial. Object pooling is where you pre-instantiate all the objects you’ll need at any specific moment before gameplay — for instance, during a loading screen. in place of
