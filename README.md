@@ -1,4 +1,4 @@
-# UnityPlantVsZombies Demo 
+# UnityPlantVsZombies Demo WIP
 A basic unity plant vs zombies clone, it and will only be used as a testing ground for technical utilities and not as an actual game. Currently the focus point of this game is to effectively implement a plant vs zombies clone using the Unity D.O.T.S formulation which is Unity's new high-performance, multithreaded Data-Oriented Technology.
 
 ## Technical Capabilities
